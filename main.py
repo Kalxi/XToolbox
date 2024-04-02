@@ -404,7 +404,7 @@ def interpreter(page, prompt="> "):
 
 def xget(ide):
     try:
-        first = (f'[bold][[/bold][blue][bold]{(ide.split('-')[0])[1:]}[/blue][/bold][bold]][/bold] {Text(tools[ide].name)}')
+        first = (f"[bold][[/bold][blue][bold]{(ide.split('-')[0])[1:]}[/blue][/bold][bold]][/bold] {Text(tools[ide].name)}")
         if ide in ['t1-1', 'm6-2', 'm7-2', 't3-2', 'l4-3', 'g2-3', 'c6-3']:
             return(f'{first} [yellow]ADV[/yellow]')
         else:
